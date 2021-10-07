@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<style>
+
+	body{
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.container{
+		width: 80%;
+		padding: 16px;
+		margin: 2rem auto;
+		background-color: bisque;
+	}
+
+		.popup{
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.5);
+			z-index: 30;
+			position: fixed;
+			top: 0;
+		}
+
+		.popup--close{
+			transform: scale(0);
+    	transition: opacity .25s, transform .25s;
+
+			/* opsional pakai
+				display: none;
+			*/
+		}
+
+		.popup__content{
+			display: block;
+			margin: 35vh auto 0;
+			width: 350px;
+			padding: 20px;
+			overflow: hidden;
+			background: #fff;
+			border-radius: .5rem;
+			position: relative;
+		}
+
+		.popup__btn{
+			text-align: center;
+			position: absolute;
+			top: 10px;
+			padding: 6px 10px;
+			background-color: #acacac;
+			right: 20px;
+			border-radius: 50%;
+			border: 2px solid #000;
+			cursor: pointer;
+		}
+
+		.popup__btn span{
+			font-weight: bold;
+			margin-top: 40px;
+		}
+
+		.popup__header{
+			margin-top: 30px;
+			font-size: 24px;
+			font-weight: 600;
+		}
+
+		.popup__body{
+			margin-top: 8px;
+			font-size: 16px;
+			line-height: 130%;
+		}
+</style>
+
+<body>
+    <div class="popup">
+			<div class="popup__content">
+					<div class="popup__btn"><span>X</span></div>
+					<div class="popup__header">
+							Welcome!! di Coding Asik
+					</div>
+					<div class="popup__body">
+							<p class="popup__desc">Disini adalah tempatnya belajar website dari awal dan untuk pemula</p>
+					</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<h1>Popup Iklan</h1>
+			<p>Contoh menampilkan Popup iklan menggunakan Html Css Javascript</p>
+
+			<hr>
+			<article>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem deserunt numquam cumque soluta, incidunt harum minus? Officia quisquam inventore optio facere! Nam repellendus corrupti porro est adipisci et blanditiis minus in hic? Aliquid quasi quae ipsa molestias, sunt amet placeat optio ut nesciunt minus dolorem iure explicabo ab, aspernatur vel. Tempore corrupti dolorem veritatis eius aperiam placeat, atque blanditiis! Distinctio, facilis velit debitis et similique exercitationem vel? Delectus aperiam ullam nam deserunt quas accusamus provident necessitatibus sapiente fugiat distinctio impedit omnis nemo soluta enim quae voluptatum eos perferendis praesentium nesciunt, quidem nostrum consequuntur deleniti autem? Architecto magnam at error obcaecati?</p>
+			</article>
+
+			<article>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem deserunt numquam cumque soluta, incidunt harum minus? Officia quisquam inventore optio facere! Nam repellendus corrupti porro est adipisci et blanditiis minus in hic? Aliquid quasi quae ipsa molestias, sunt amet placeat optio ut nesciunt minus dolorem iure explicabo ab, aspernatur vel. Tempore corrupti dolorem veritatis eius aperiam placeat, atque blanditiis! Distinctio, facilis velit debitis et similique exercitationem vel? Delectus aperiam ullam nam deserunt quas accusamus provident necessitatibus sapiente fugiat distinctio impedit omnis nemo soluta enim quae voluptatum eos perferendis praesentium nesciunt, quidem nostrum consequuntur deleniti autem? Architecto magnam at error obcaecati?</p>
+			</article>
+
+			<article>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem deserunt numquam cumque soluta, incidunt harum minus? Officia quisquam inventore optio facere! Nam repellendus corrupti porro est adipisci et blanditiis minus in hic? Aliquid quasi quae ipsa molestias, sunt amet placeat optio ut nesciunt minus dolorem iure explicabo ab, aspernatur vel. Tempore corrupti dolorem veritatis eius aperiam placeat, atque blanditiis! Distinctio, facilis velit debitis et similique exercitationem vel? Delectus aperiam ullam nam deserunt quas accusamus provident necessitatibus sapiente fugiat distinctio impedit omnis nemo soluta enim quae voluptatum eos perferendis praesentium nesciunt, quidem nostrum consequuntur deleniti autem? Architecto magnam at error obcaecati?</p>
+			</article>
+
+			<article>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem deserunt numquam cumque soluta, incidunt harum minus? Officia quisquam inventore optio facere! Nam repellendus corrupti porro est adipisci et blanditiis minus in hic? Aliquid quasi quae ipsa molestias, sunt amet placeat optio ut nesciunt minus dolorem iure explicabo ab, aspernatur vel. Tempore corrupti dolorem veritatis eius aperiam placeat, atque blanditiis! Distinctio, facilis velit debitis et similique exercitationem vel? Delectus aperiam ullam nam deserunt quas accusamus provident necessitatibus sapiente fugiat distinctio impedit omnis nemo soluta enim quae voluptatum eos perferendis praesentium nesciunt, quidem nostrum consequuntur deleniti autem? Architecto magnam at error obcaecati?</p>
+			</article>
+
+			<article>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem deserunt numquam cumque soluta, incidunt harum minus? Officia quisquam inventore optio facere! Nam repellendus corrupti porro est adipisci et blanditiis minus in hic? Aliquid quasi quae ipsa molestias, sunt amet placeat optio ut nesciunt minus dolorem iure explicabo ab, aspernatur vel. Tempore corrupti dolorem veritatis eius aperiam placeat, atque blanditiis! Distinctio, facilis velit debitis et similique exercitationem vel? Delectus aperiam ullam nam deserunt quas accusamus provident necessitatibus sapiente fugiat distinctio impedit omnis nemo soluta enim quae voluptatum eos perferendis praesentium nesciunt, quidem nostrum consequuntur deleniti autem? Architecto magnam at error obcaecati?</p>
+			</article>
+		</div>
+
+		<script>
+			var popup = document.querySelector(".popup");
+			var popupBtn = document.querySelector(".popup__btn");
+
+			popupBtn.addEventListener("click",function(){
+				if(popup.classList.contains == "popup--close"){
+					console.log("punya");
+				}else{
+					popup.classList.add("popup--close");
+					console.log("ngga");
+				}
+			});
+
+		</script>
+</body>
+
+</html>
