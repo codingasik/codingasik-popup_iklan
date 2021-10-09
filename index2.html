@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+
+    body{
+      margin: 0;
+      padding: 0;
+    }
+    .popup{
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,.3);
+      position: fixed;
+      opacity: 0;
+      transition: all .2s ease-in;
+    }
+
+    .popup__content{
+      width: 300px;
+      text-align: center;
+      position: relative;
+      margin: 20vh auto;
+    }
+
+    .popup__image{
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    .popup__dismiss{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 25px;
+    }
+
+    .popup--show{
+      opacity: 1;
+    }
+
+    .popup--close{
+      display: none;
+      transition: all .2s ease-out;
+    }
+  </style>
+</head>
+<body>
+  
+
+  <div class="popup">
+    <div class="popup__content">
+      <img class="popup__image" src="img/iklan.png" alt="Popup Iklan">
+      <img class="popup__dismiss" src="img/btn-close.png" alt="Close">
+      <img class="popup__shop" src="img/btn-shop.png" alt="Shop">
+    </div>
+  </div>
+
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate quam voluptatem odio autem cum consequuntur iure inventore et vel ipsum corporis quod, molestiae, sequi laboriosam expedita. Modi atque eaque sapiente rem sed optio facere voluptatibus, dicta odit excepturi! Dolorem, sunt dicta minus inventore explicabo qui eligendi corporis sit laborum itaque quos ut tenetur veniam reprehenderit consequuntur quibusdam ipsam magni earum natus cupiditate ex corrupti, saepe sed consectetur? Sed exercitationem consequuntur aperiam quidem necessitatibus iste, illo minus excepturi provident reprehenderit nulla eligendi quas consequatur aspernatur obcaecati sequi dignissimos sunt officia id est nisi repellat suscipit saepe laudantium. Eius, minima a? Nihil quae iure voluptatem dignissimos exercitationem expedita sed porro cum quia, similique voluptate eum id corporis nemo ullam eius. Reprehenderit provident totam quidem nostrum. Deserunt enim maxime eveniet commodi rem quos sapiente esse rerum incidunt inventore ad temporibus cumque impedit sint expedita ipsum vel, architecto accusantium pariatur? Earum fuga autem accusantium sit aliquid? Quasi repellat pariatur doloribus quaerat reiciendis earum nostrum perspiciatis ipsam totam, nam ipsum maiores possimus recusandae eum tempora impedit alias quisquam ullam ratione voluptates numquam iusto! Sed error ipsam placeat odit eos enim nihil reprehenderit, provident quis dolor quod et veniam ea consequuntur voluptate aperiam reiciendis deserunt dicta! Assumenda illo perferendis incidunt consectetur non sint deleniti veritatis natus! Iste eaque dolorum nobis doloribus numquam, veniam vel tempore deleniti. Cupiditate nam quam necessitatibus exercitationem ipsum veritatis distinctio quibusdam vitae quia vel nostrum modi, voluptas, inventore, laboriosam similique. Ut quas molestias excepturi soluta dolorum provident, iste inventore quae sint sapiente necessitatibus quis dolores nostrum harum similique, neque nemo numquam odit vitae saepe laudantium, voluptates adipisci cumque ipsum! Ipsam aut aperiam quam fugiat, placeat temporibus accusantium veniam quibusdam fuga pariatur cum accusamus sed asperiores voluptatibus? Dolor dignissimos reprehenderit quia laborum. Mollitia ducimus dolores provident nesciunt sit commodi, impedit atque molestiae esse fuga! Laboriosam voluptas impedit assumenda ab non dignissimos temporibus commodi enim numquam et beatae rem quidem eligendi id mollitia earum reprehenderit vitae, architecto iure corrupti omnis necessitatibus sit? Doloremque provident, molestias voluptatum illum sit temporibus. Vel quasi eveniet repudiandae, explicabo eum architecto voluptatum assumenda quos neque eius officia dolor, quis necessitatibus sint, magnam ipsam nemo iusto ratione ad illo fugit porro beatae deleniti incidunt! Rem, ipsam enim ipsum possimus minus pariatur ducimus architecto cumque! Illum tenetur ad fugiat cumque. Asperiores, ut neque itaque earum excepturi cupiditate exercitationem, aspernatur similique accusamus quaerat, commodi voluptas! Fugit ullam, necessitatibus veniam eos dolorum mollitia esse a asperiores cum sit beatae porro doloribus non, adipisci nisi fugiat! Deleniti neque aspernatur nobis adipisci corrupti iure odio saepe eius tenetur, numquam, molestias illo vel quibusdam alias dolorum! Rerum, corporis sed, temporibus maiores, tenetur eum reiciendis esse placeat harum cupiditate dolorum libero. Facere earum dolorum ea laborum magnam quasi illum architecto beatae doloremque eius quis ut temporibus quos vel quas repellendus nisi placeat dignissimos commodi, error rem totam et. Illo exercitationem accusantium est pariatur? Cumque sunt ducimus odit repellat asperiores, ratione, corporis impedit error officiis maiores quo totam sit, quibusdam inventore dolor dignissimos dolores? Animi nesciunt rem eum?</p>
+
+
+  <script>
+    var popup = document.querySelector(".popup");
+    var dismiss = document.querySelector(".popup__dismiss");
+    var shop = document.querySelector(".popup__shop");
+
+    setTimeout(function(){
+      popup.classList.add("popup--show");
+    },3000);
+
+    dismiss.addEventListener("click",function(){
+      console.log("kil dismiss");
+      popup.classList.remove("popup--show");
+      popup.classList.add("popup--close");
+    })
+
+    shop.addEventListener("click",function(){
+      console.log("kil shop");
+      popup.classList.remove("popup--show");
+      popup.classList.add("popup--close");
+      alert("Selamat anda dapat diskon");
+    })
+
+  </script>
+
+
+</body>
+</html>
